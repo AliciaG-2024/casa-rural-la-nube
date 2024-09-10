@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contacto</title>
+    </head>
+    <body background="IMG/casa_rural.jpg";>
+        <header>
+            <h1><a href="contacto.html">contacto</a></h1>
+            <img src="IMG/paisaje rural.jpg " alt="paisaje rural"> 
+            <p style="text-align: right;">
+                <a href="index.html"> Pagina principal</a>
+            </p>
+            <h2>Formulario de contacto </h2>
+        </header> 
+        <form action="/submit_form" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+            <label for="Telefono">Telefono:</label><br>
+            <input type="text" id="telefono" name="telefono" required pattern="\d{9}" title="Debe contener 9 dígitos"><br><br>
+            <label for="tarjeta">Número de tarjeta:</label><br>
+            <input type="text" id="tarjeta" name="tarjeta" required pattern="\d{16}" title="Debe contener 16 dígitos"><br><br>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Enviar">
+        </form>    
+    </body>
+</html>
